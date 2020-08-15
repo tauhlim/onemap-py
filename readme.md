@@ -38,30 +38,33 @@ changi_airport = x.search("CHANGI AIRPORT TERMINAL 3")['results'][0]
 x.Router.route_from_postal(gh['POSTAL'], changi_airport['POSTAL'], route_type='drive')
 ```
 
-
-
-
 Details
 ----------------
-Client
-    Main class that encapsulates all classes defined in other modules.
-    `Client` itself is a subclass of `OneMap`, but also has attributes `Router`, `PlanningAreas`, `Population`, and `Themes`.
+> **Client**:
+>
+>   Main class that encapsulates all classes defined in other modules.
+        `Client` itself is a subclass of `OneMap`, but also has attributes `Router`, `PlanningAreas`, `Population`, and `Themes`.
 
-base.OneMap
-    Provides basic functionality such as address search, coordinate conversion, and authentication.
+> **base.OneMap**
+> 
+>    Provides basic functionality such as address search, coordinate conversion, and authentication.
 
-routing.Router
-    Provides functionality to query routes between 2 points.
+> **routing.Router**
+>
+>    Provides functionality to query routes between 2 points.
+>    Currently supports `(lat,lng)->(lat,lng)` or `postal->postal`
 
-    Currently supports `(lat,lng)->(lat,lng)` or `postal->postal`
+> **planning_areas.PlanningAreas**
+>
+>   Provides functionality to retrieve planning areas, including geospatial boundaries.
 
-planning_areas.PlanningAreas
-   Provides functionality to retrieve planning areas, including geospatial boundaries.
+> **population.Population**
+>
+>    Handles all population-related queries, including education level, economic status, work income, marital status etc.
+>    Use `Population.available_data_types` to see available data types
+>   
+>    For a full list of data provided by OneMap, you can refer to their documentation.
 
-population.Population
-    Handles all population-related queries, including education level, economic status, work income, marital status etc.
-
-    For a full list of data provided by OneMap, you can refer to their documentation.
-
-themes.Themes
-    Thematic information from various agencies in Singapore.
+> **themes.Themes**
+>
+>    Thematic information from various agencies in Singapore.
