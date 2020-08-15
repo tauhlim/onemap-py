@@ -7,7 +7,7 @@ This package provides a simple way to query data using the OneMap API in Python.
 
 OneMap arranges its API endpoints by groups, and this package is organized to reflect that grouping.
 
-onemap-python allows you to make queries corresponding to the OneMap API, and returns the results to you in a standard
+onemap-py allows you to make queries corresponding to the OneMap API, and returns the results to you in a standard
 python `dict`.
 
 Details
