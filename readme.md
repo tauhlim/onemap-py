@@ -38,8 +38,14 @@ changi_airport = x.search("CHANGI AIRPORT TERMINAL 3")['results'][0]
 x.Router.route_from_postal(gh['POSTAL'], changi_airport['POSTAL'], route_type='drive')
 ```
 
-Details
-----------------
+## References
+1. OneMap API Documentation [here](https://docs.onemap.sg/)
+1. OneMap API Account Registration [here](https://developers.onemap.sg/signup/)
+1. `Poetry` used to package and publish on `pypi` [here](https://python-poetry.org/)
+
+
+## Details
+
 > **Client**:
 >
 >   Main class that encapsulates all classes defined in other modules.

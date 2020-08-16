@@ -1,8 +1,10 @@
 [tool.poetry]
 name = "onemap-py"
-version = "0.1.0"
-description = ""
+version = "0.2.0"
+description = "Python wrapper for SLA's OneMap API"
 authors = ["tauculator"]
+readme = "readme.md"
+repository = "https://github.com/tauhlim/onemap-py"
 
 [tool.poetry.dependencies]
 python = "^3.6"
